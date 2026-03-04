@@ -3,10 +3,426 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:iital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <aside class="sidebar">
+
+            <div class="logo">
+                <img src="assets/icons/netflex.svg" alt="NETFLEX">
+                <span class="brand-name">NETFLEX</span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/dashboard.svg">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/watchlist.svg">
+                            <span>Watchlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/favorites.svg">
+                            <span>Favorites</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/movies.svg">
+                            <span>Movies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/tv.svg">
+                            <span>TV Shows</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/genres.svg">
+                            <span>Genres</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/language.svg">
+                            <span>Language</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/settings.svg" alt="settings">
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/support.svg" alt="support">
+                            <span>Support</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/icons/privacy.svg" alt="privacy">
+                            <span>Privacy</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <header class="header">
+            <div class="user-profile">
+                <div class="user-greeting">
+                    <p>Hi there,</p>
+                    <span class="user-name">Carrot Bunny</span>
+                </div>
+            <div class="search-bar">
+                <img src="assets/icons/search.svg" class="search-icon">
+                <input type="text" placeholder="Search movies, shows...">
+            </div>
+            </div>
+            
+            <div class="header-actions">
+                <img src="assets/icons/bell.svg" alt="">
+                <div class="user-profile">
+                    <img src="assets/icons/user.svg" alt="" class="profile-avatar">
+                    <span>Bunny</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="movies">
+
+                <div class="movie-section">
+                    <h2>Recently Watched</h2>
+                    <div class="movie-slider">
+                        <button class="slider-btn left">‹</button>
+                    <div class="movie-row">
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/blade-runner-2049.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.0</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/demon-slayer.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.6</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/derry-girls.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.8</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/interstellar.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.7</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/parasite.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.5</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/prisoners.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.2</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/spy-family.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.4</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/the-grand-budapest-hotel.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.1</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recently-watched/you.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 7.6</span>
+                        </div>
+                    </div>
+                    <button class="slider-btn right">›</button>
+                    </div>
+                </div>
+
+                <div class="movie-section">
+                    <h2 class="trending-title">
+                        <img src="assets/icons/fire.svg" alt="" class="title-icon">Trending Now</h2>
+                    <div class="movie-slider">
+                        <button class="slider-btn left">‹</button>
+                    <div class="movie-row">
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/barbie.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 6.9</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/crime-101.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 7.1</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/dune-2.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.4</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/killers-of-the-flower-moon.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 7.5</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/poor-things.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 7.8</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/scream-7.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 7.2</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/superman.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 7.1</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/the-holdovers.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 7.9</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/trending/zootopia-2.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 7.0</span>
+                        </div>
+                    </div>
+                    <button class="slider-btn right">›</button>
+                    </div>
+                </div>
+
+                <div class="movie-section">
+                    <h2>Recommended</h2>
+                    <div class="movie-slider">
+                        <button class="slider-btn left">‹</button>
+                    <div class="movie-row">
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/10days.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 6.5</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/before-sunrise.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.1</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/friends.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.9</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/mean-girls.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 5.7</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/modern-family.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.5</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/omitb.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 8.1</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/reply-1988.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 9.2</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/tangerines.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 9.0</span>
+                        </div>
+                        <div class="movie-card">
+                            <img src="assets/posters/recommended/the-office.webp" alt="">
+                            <div class="card-hover-info">
+                                <img src="assets/icons/play.svg" class="btn-play">
+                                <img src="assets/icons/information-circle.svg" class="btn-info">
+                            </div>
+                            <span class="rating">⭐ 9.1</span>
+                        </div>
+                    </div> 
+                    <button class="slider-btn right">›</button>                          
+                    </div>
+                </div>                
+            </section>
+
+            <section class="discover">
+                <div class="discover-card">
+                    <h3>New Releases</h3>
+
+                    <div class="discover-item">
+                        <img src="assets/posters/new-releases/avatar.webp" alt="">
+                        <div>
+                            <p>Avatar: Fire and Ash</p>
+                            <span>2025</span>
+                        </div>
+                    </div>
+                    <div class="discover-item">
+                        <img src="assets/posters/new-releases/cat-in-hat.webp" alt="">
+                        <div>
+                            <p>The Cat in the Hat</p>
+                            <span>2026</span>
+                        </div>
+                    </div>
+                    <div class="discover-item">
+                        <img src="assets/posters/new-releases/hunger-games.webp" alt="">
+                        <div>
+                            <p>The Hunger Games</p>
+                            <span>2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discover-card">
+                    <h3>Coming Soon</h3>
+
+                    <div class="discover-item">
+                        <img src="assets/posters/coming-soon/avengers-doomsday.webp" alt="">
+                        <div>
+                            <p>Avengers: Doomsday</p>
+                            <span>2026</span>
+                        </div>
+                    </div>
+                    <div class="discover-item">
+                        <img src="assets/posters/coming-soon/hail-mary.webp" alt="">
+                        <div>
+                            <p>Project Hail Mary</p>
+                            <span>2026</span>
+                        </div>
+                    </div>
+                    <div class="discover-item">
+                        <img src="assets/posters/coming-soon/toy-story-5.webp" alt="">
+                        <div>
+                            <p>Toy Story 5</p>
+                            <span>2026</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
