@@ -1,4 +1,4 @@
-# 🎬 NETFLEX Dashboard
+# 🎬 MOVIE Dashboard
 
 A movie streaming dashboard inspired by modern platforms like Netflix.  
 This project focuses on layout architecture using CSS Grid, reusable components, horizontal content sliders, and interactive UI elements.
